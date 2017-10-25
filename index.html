@@ -1,0 +1,1580 @@
+<!doctype html>
+<html class="no-js" lang="en"> 
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Yosh</title>
+       	<meta name="description" content="Alex is a responsive creative template">
+		<meta name="keywords" content="portfolio, personal, corporate, business, parallax, creative, agency">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- bootstrap css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+
+
+		<!-- owl carousel CSS -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+		<!-- magnific-popup CSS -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+
+		<!-- Font Icon Core CSS -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/et-line.css">
+
+		<!-- Core Style Css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/theme-color-main.css">
+        <style type="text/css">
+        	.content .item1 {
+              
+              box-shadow: 0 0 5px 0 #ccc;
+        	}
+              .item_pro{
+              	box-shadow: 0 0 5px 0 #ccc;
+              border-radius: 5px;
+              padding: 10px;
+              padding-top: 20px;
+              }
+        	 .item2 {
+              
+              box-shadow: 0 0 5px 0 #ccc;
+              border-radius: 5px;
+              border-top: 2px solid #0686cb;
+              margin-bottom: 25px;
+              margin-top: 25px;
+        	}
+            .item_blog {
+            	box-shadow: 0 0 5px 0 #ccc;
+            	padding: 5px;
+            	border-radius: 5px;
+            	margin-bottom: 25px;
+            }
+        	.content .portfolio img {
+        		height: 200px;
+        		width: 100%;
+        		object-fit: cover;
+        		overflow: hidden;
+        	}
+        	.content .portfolio .sm-titl1 {
+        		padding-top: 20px;
+        	}
+
+        	.sm-titl1 {
+        		padding-top: 10px;
+        	}
+        	.img_res img {
+        		height: 80px;
+        		max-width: 80px;
+        		display: inline-block;
+        		object-fit: cover;
+        		overflow: hidden;
+        		margin-top: 13px;
+        	}
+        	.hero-img img {
+        		border-radius: 5px;
+        	}
+        	@media(min-width: 768px){
+        		.navbar-nav {
+        		float: none;
+        		margin: 0 auto;
+        		display: block;
+        		text-align: center;
+        	}
+        	.navbar-nav > li {
+        		display: inline-block;
+        		float: none;
+        	}
+        	}
+
+        	#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		background: #0686cb;
+		color:#fff;
+	}
+ 
+
+ 
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width:31%;
+	margin:1%;
+	display:none;
+	float:left;
+	overflow:hidden;
+	box-shadow: 0 0 5px 0 #ccc;
+	border-radius: 5px;
+}
+
+	.portfolio-wrapper {
+		overflow:hidden;
+		position: relative !important;
+		background: #666;
+		cursor:pointer;
+	}
+
+	.portfolio img {
+		max-width:100%;
+		position: relative;
+		top:0;
+    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);		
+	}
+	
+	.portfolio .label {
+		position: absolute;
+		width: 100%;
+		height:40px;
+		bottom:-40px;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+
+		.portfolio .label-bg {
+			background: #0686cb;
+			width: 100%;
+			height:100%;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+	
+		.portfolio .label-text {
+			color:#fff;
+			position: relative;
+			z-index:500;
+			padding:5px 8px;
+		}
+			
+			.portfolio .text-category {
+				display:block;
+				font-size:9px;
+			}
+	
+	.portfolio:hover .label {
+    bottom:0;
+  }
+	.portfolio:hover img {
+    top:-30px;
+  }  
+
+	
+
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	
+	
+	#portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+	}		
+
+	#ads {
+		display:none;
+	}
+	
+}
+
+@media only screen and (max-width: 567px) {
+	
+	
+	#portfoliolist .portfolio {
+		width:98%;
+		margin:1%;
+	}		
+
+	#ads {
+		display:none;
+	}
+	
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+	#ads {
+		display:none;
+	}
+	
+}
+ tr td {
+ 	font-size: 16px;
+
+ }
+ tr td:last-child {
+ 	
+ 	color: #0686cb;
+ }
+  
+ .ex_con {
+ 	box-shadow: 0 0 5px 0 #ccc;
+ 	padding: 10px;
+ 	border-radius: 5px;
+ }
+ .progress_circle{
+ 	padding: 7px;
+ }
+ .progress_circle li {
+ 	width: 15px;
+ 	height: 15px;
+ 	border-radius: 50%;
+ 	background-color: #0686cb;
+ 	border: 1px solid #eee;
+ }
+ .no_back{
+ 	background-color: transparent !important;
+ }
+ .img-post img {
+ 	border-radius: 5px;
+ }
+ .date {
+ 	border-radius: 5px;
+ }
+ 
+        </style>
+
+        <!--[if lt IE 9]-->
+		<script src="js/html5shiv.min.js"></script>
+		<!--[endif]-->
+    </head>
+    <body>
+
+    	<!-- ====== Preloader ======  -->
+	    <div class="loading">
+			<div class="load-circle"><span class="one"></span></div>
+		</div>
+		<!-- ======End Preloader ======  -->
+
+    	
+
+   		<!-- ====== Navgition ======  -->
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-icon-collapse" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+
+		      
+
+		    </div>
+
+		    <!-- Collect the nav links, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="nav-icon-collapse">
+		      
+			  <!-- links -->
+		      <ul class="nav navbar-nav">
+		        <li><a href="#home" data-scroll-nav="0" class="active">Home</a></li>
+		        <li><a href="#about" data-scroll-nav="1">About Me</a></li>
+		        <li><a href="#skills" data-scroll-nav="2">Skills</a></li>
+		        <li><a href="#work" data-scroll-nav="3">Work Experience</a></li>
+		        
+		        <li><a href="#projects" data-scroll-nav="4">Projects</a></li>
+		        <li><a href="#test" data-scroll-nav="5">Testimonials</a></li>
+		        <li><a href="#blog" data-scroll-nav="6">Blog</a></li>
+		        <li><a href="#contact" data-scroll-nav="7">Contact</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container -->
+		</nav>
+		<!-- ====== End Navgition ======  -->
+
+		<!-- ====== Header ======  -->
+		<section id="home" class="header" data-scroll-index="0" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="v-middle">
+					<div class="caption">
+						
+						<h1>I Am Alex Yosh</h1>
+						<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h6>
+					</div>
+				</div>
+				<div class="button-scroll" data-scroll-nav="1"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></div>
+			</div>
+		</section>
+		<!-- ====== End Header ======  -->
+
+		<!-- ====== Hero ======  -->
+		<section id="about" class="hero section-padding" data-scroll-index="1">
+			<div class="container">
+				<div class="row">
+					<div class="section-border">
+						<div class="content">
+							<div class="row" style="margin:0;">
+								<div class="col-md-4">
+								<div class="hero-img">
+									<img src="img/hero.jpg" alt="hero-img">
+									<!-- social Icon -->
+									<div class="social-icon">
+										<a href="#0">
+											<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+										</a>
+										<a href="#0">
+											<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+										</a>
+										<a href="#0">
+											<span><i class="fa fa-pinterest-p" aria-hidden="true"></i></span>
+										</a>
+										<a href="#0">
+											<span><i class="fa fa-behance" aria-hidden="true"></i></span>
+										</a>
+										<a href="#0">
+											<span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-offset-1 col-md-7">
+								<div class="hero-info">
+									<h4 class="main-title">About Me</h4>
+									<h5>I Am UI / UX Developer</h5>
+									<p style="font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+
+
+									
+								</div>
+							</div>
+								
+							</div>
+							<div class="row">
+							<div class="col-xs-12 text-center">
+								<br><br><br>
+								<h4 class="main-title">Education</h4>
+								<br>
+								
+							</div>
+								<div class="col-sm-4">
+                                   
+									<div class="item item2">
+										<div class="edu_img">
+											<img src="img/blog/1.jpg" class="img-responsive">
+										</div>
+										<div class="edu_content" style="padding: 10px;">
+											<table>
+												<tbody>
+													<tr>
+														
+													    <td>Anna University</td>
+												    </tr>
+												    <tr>
+														
+													    <td>Usa</td>
+												    </tr>
+												    <tr>
+														
+													    <td>2001 - 2005</td>
+												    </tr>
+												</tbody>
+											</table>
+											<br>
+											<p>Lorem ipsum dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>	
+										</div>
+										
+									</div>
+
+								</div>
+								<div class="col-sm-4">
+                                   
+									<div class="item item2">
+										<div class="edu_img">
+											<img src="img/blog/1.jpg" class="img-responsive">
+										</div>
+										<div class="edu_content" style="padding: 10px;">
+											<table>
+												<tbody>
+													<tr>
+														
+													    <td>Anna University</td>
+												    </tr>
+												    <tr>
+														
+													    <td>Usa</td>
+												    </tr>
+												    <tr>
+														
+													    <td>2001 - 2005</td>
+												    </tr>
+												</tbody>
+											</table>
+											<br>
+											<p>Lorem ipsum dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>	
+										</div>
+										
+									</div>
+
+								</div>
+								<div class="col-sm-4">
+                                   
+									<div class="item item2">
+										<div class="edu_img">
+											<img src="img/blog/1.jpg" class="img-responsive">
+										</div>
+										<div class="edu_content" style="padding: 10px;">
+											<table>
+												<tbody>
+													<tr>
+														
+													    <td>Anna University</td>
+												    </tr>
+												    <tr>
+														
+													    <td>Usa</td>
+												    </tr>
+												    <tr>
+														
+													    <td>2001 - 2005</td>
+												    </tr>
+												</tbody>
+											</table>
+											<br>
+											<p>Lorem ipsum dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>	
+										</div>
+										
+									</div>
+
+								</div>
+								
+								
+							</div>
+							
+							
+							<div class="clear-fix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- ====== End Hero ======  -->
+        
+		<!-- ====== Skills ======  -->
+		<section id="skills" class="skills section-padding section-gray" data-scroll-index="2">
+			<div class="container">
+				<div class="row">
+					<div class="section-border">
+						<div class="content">
+
+							<div class="row">
+								<div class="col-xs-12 text-center">
+								<h4 class="main-title text-center mb-80">Skills</h4>
+							</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="skills-info">
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li ></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li class="no_back"></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+
+									
+
+									
+									
+
+									
+
+									
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="skills-info">
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li class="no_back"></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item item_pro">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="img/book.png" style="width: 40px;height: 40px;">
+											</div>
+											<div class="col-xs-11">
+												<h6 class="sm-titl" style="margin-bottom: 0;">HTML / Css</h6>
+										        <ul class="list-inline progress_circle">
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        	<li></li>
+										        </ul>
+											</div>
+										</div>
+										
+									</div>
+
+									
+								</div>
+							</div>
+
+							<div class="clear-fix"></div>
+
+							
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ====== End Skills ======  -->
+
+		<!-- ====== Resume ======  -->
+		<section id="work" class="resume section-padding " data-scroll-index="3">
+			<div class="container">
+				<div class="row">
+					<div class="section-border">
+						<div class="content">
+                            
+							<div class="row">
+								<div class="col-xs-12 text-center">
+								<h4 class="main-title text-center mb-80">Work Experience</h4>
+							</div>
+							</div>
+							
+
+							<div class="col-md-6">
+								<div class="column-left">
+
+									<span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+
+									<div class="item ex_con">
+										<div class="row">
+											<div class="col-xs-3">
+												<div class="img_res">
+													<img src="img/client/2.jpg">
+												</div>
+											</div>
+											<div class="col-xs-9">
+												<h6 class="sm-titl">Art Director - Facebook Inc.</h6>
+												<span class="date">2016 - Present</span>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+											</div>
+											
+										</div>
+									</div>
+									<div class="item ex_con">
+										<div class="row">
+											<div class="col-xs-3">
+												<div class="img_res">
+													<img src="img/client/2.jpg">
+												</div>
+											</div>
+											<div class="col-xs-9">
+												<h6 class="sm-titl">Art Director - Facebook Inc.</h6>
+												<span class="date">2016 - Present</span>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+											</div>
+											
+										</div>
+									</div>
+									<div class="item ex_con">
+										<div class="row">
+											<div class="col-xs-3">
+												<div class="img_res">
+													<img src="img/client/2.jpg">
+												</div>
+											</div>
+											<div class="col-xs-9">
+												<h6 class="sm-titl">Art Director - Facebook Inc.</h6>
+												<span class="date">2016 - Present</span>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+											</div>
+											
+										</div>
+									</div>
+									<div class="item ex_con">
+										<div class="row">
+											<div class="col-xs-3">
+												<div class="img_res">
+													<img src="img/client/2.jpg">
+												</div>
+											</div>
+											<div class="col-xs-9">
+												<h6 class="sm-titl">Art Director - Facebook Inc.</h6>
+												<span class="date">2016 - Present</span>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+											</div>
+											
+										</div>
+									</div>
+
+									
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="column-right">
+
+									<span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                                    <div class="item ex_con">
+										<div class="row">
+											<div class="col-xs-3">
+												<div class="img_res">
+													<img src="img/client/2.jpg">
+												</div>
+											</div>
+											<div class="col-xs-9">
+												<h6 class="sm-titl">Abc University of Los Angeles.</h6>
+												<span class="date">2016 - Present</span>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+											</div>
+											
+										</div>
+									</div>
+									<div class="item ex_con">
+										<div class="row">
+											<div class="col-xs-3">
+												<div class="img_res">
+													<img src="img/client/2.jpg">
+												</div>
+											</div>
+											<div class="col-xs-9">
+												<h6 class="sm-titl">Abc University of Los Angeles.</h6>
+												<span class="date">2016 - Present</span>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+											</div>
+											
+										</div>
+									</div>
+									<div class="item ex_con">
+										<div class="row">
+											<div class="col-xs-3">
+												<div class="img_res">
+													<img src="img/client/2.jpg">
+												</div>
+											</div>
+											<div class="col-xs-9">
+												<h6 class="sm-titl">Abc University of Los Angeles.</h6>
+												<span class="date">2016 - Present</span>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+											</div>
+											
+										</div>
+									</div>
+									<div class="item ex_con">
+										<div class="row">
+											<div class="col-xs-3">
+												<div class="img_res">
+													<img src="img/client/2.jpg">
+												</div>
+											</div>
+											<div class="col-xs-9">
+												<h6 class="sm-titl">Abc University of Los Angeles.</h6>
+												<span class="date">2016 - Present</span>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+											</div>
+											
+										</div>
+									</div>
+
+									
+
+								</div>
+							</div>
+
+							<div class="clear-fix"></div>
+
+							<div class="text-center">
+								<a class="butn" href="resume.doc">Download C.V<span></span></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ====== End Resume ======  -->
+
+		<!-- ====== Services ======  -->
+		<section id="projects" class="services section-padding section-gray" data-scroll-index="4">
+			<div class="container">
+				<div class="row">
+					<div class="section-border">
+						<div class="content text-center">
+							
+							
+                            
+							<div class="row">
+								<div class="col-xs-12 text-center">
+								<h4 class="main-title text-center mb-80">Projects</h4>
+							</div>
+							</div>
+							
+
+
+							<ul id="filters" class="clearfix">
+								<li><span class="filter active" data-filter="*">All</span></li>
+								<li><span class="filter" data-filter=".app">Title 1</span></li>
+								<li><span class="filter" data-filter=".card">Title 2</span></li>
+								<li><span class="filter" data-filter=".icon">Title 3</span></li>
+								<li><span class="filter" data-filter=".app1">Title 4</span></li>
+								<li><span class="filter" data-filter=".card2">Title 5</span></li>
+								<li><span class="filter" data-filter=".icon3">Title 6</span></li>
+								
+								
+							</ul>
+
+							<div id="portfoliolist">
+								<br>
+								<div class="portfolio icon" data-cat="icon">
+									<div class="">
+									  <a href="projects.html">				
+										<div class="item">
+											<div class="item_img">
+												<img src="img/portfolio/1.jpg" alt="image">
+											</div>
+											<h6 class="sm-titl sm-titl1">Web Design</h6>
+											<p>Lorem ipsum dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+											<div class="text-center"><br>
+											<a class="butn btn-xs" href="projects.html">Learn More<span></span></a>
+										    </div>
+										</div>
+									  </a>
+									</div>
+								</div>				
+
+								<div class="portfolio app" data-cat="app">
+									<div class="">
+									 <a href="projects.html">				
+										<div class="item">
+											<div class="item_img">
+												<img src="img/portfolio/1.jpg" alt="image">
+											</div>
+											<h6 class="sm-titl sm-titl1">Web Design</h6>
+											<p>Lorem ipsum dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+											<div class="text-center"><br>
+											<a class="butn btn-xs" href="projects.html">Learn More<span></span></a>
+										    </div>
+										</div>
+								    	</a>
+									</div>
+								</div>		
+								
+								<div class="portfolio card" data-cat="card">
+									<div class="">	
+									  <a href="projects.html">			
+										<div class="item">
+											<div class="item_img">
+												<img src="img/portfolio/1.jpg" alt="image">
+											</div>
+											<h6 class="sm-titl sm-titl1">Web Design</h6>
+											<p>Lorem ipsum dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+											<div class="text-center"><br>
+											<a class="butn btn-xs" href="projects.html">Learn More<span></span></a>
+										    </div>
+										</div>
+									   </a>
+									</div>
+								</div>				
+								
+									
+											
+												
+															
+								
+							</div>
+
+							
+							<div class="clear-fix"></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ====== End Services ======  -->
+
+		<!-- ====== Testimonials ======  -->
+		<section class="clients section-padding " data-scroll-index="5" id="test">
+			<div class="container">
+				<div class="row">
+					<div class="section-border">
+						<div class="content ">
+
+							
+							<div class="row">
+								<div class="col-xs-12 text-center">
+								<h4 class="main-title text-center mb-80">Testimonials</h4>
+							</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="owl-carousel owl-theme">
+									<div class="item">
+										<div class="row">
+											<div class="col-sm-12 text-center">
+												<div class="client-img ">
+													<img src="img/client/1.jpg" alt="image">
+												</div>
+
+												<div class="text-left">
+													<a href="http://www.linkedin.com" target="_blank">
+													<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit,Lorem ipsum eiusmod tempor sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+													<h6 class="sm-titl">Martin Smith</h6>
+													<span class="info">Linkedin</span>
+												</a>
+												</div>
+												
+											</div>
+											
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-sm-12 text-center">
+												<div class="client-img ">
+													<img src="img/client/1.jpg" alt="image">
+												</div>
+
+												<div >
+													<a href="http://www.linkedin.com" target="_blank">
+													<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit,Lorem ipsum eiusmod tempor sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+													<h6 class="sm-titl">Martin Smith</h6>
+													<span class="info">Linkedin</span>
+												</a>
+												</div>
+												
+											</div>
+											
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-sm-12 text-center">
+												<div class="client-img ">
+													<img src="img/client/1.jpg" alt="image">
+												</div>
+
+												<div >
+													<a href="http://www.linkedin.com" target="_blank">
+													<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit,Lorem ipsum eiusmod tempor sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+													<h6 class="sm-titl">Martin Smith</h6>
+													<span class="info">Linkedin</span>
+												</a>
+												</div>
+												
+											</div>
+											
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-sm-12 text-center">
+												<div class="client-img ">
+													<img src="img/client/1.jpg" alt="image">
+												</div>
+
+												<div >
+													<a href="http://www.linkedin.com" target="_blank">
+													<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit,Lorem ipsum eiusmod tempor sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+													<h6 class="sm-titl">Martin Smith</h6>
+													<span class="info">Linkedin</span>
+												</a>
+												</div>
+												
+											</div>
+											
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-sm-12 text-center">
+												<div class="client-img ">
+													<img src="img/client/1.jpg" alt="image">
+												</div>
+
+												<div >
+													<a href="http://www.linkedin.com" target="_blank">
+													<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit,Lorem ipsum eiusmod tempor sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+													<h6 class="sm-titl">Martin Smith</h6>
+													<span class="info">Linkedin</span>
+												</a>
+												</div>
+												
+											</div>
+											
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-sm-12 text-center">
+												<div class="client-img ">
+													<img src="img/client/1.jpg" alt="image">
+												</div>
+
+												<div >
+													<a href="http://www.linkedin.com" target="_blank">
+													<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit,Lorem ipsum eiusmod tempor sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+													<h6 class="sm-titl">Martin Smith</h6>
+													<span class="info">Linkedin</span>
+												</a>
+												</div>
+												
+											</div>
+											
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-sm-12 text-center">
+												<div class="client-img ">
+													<img src="img/client/1.jpg" alt="image">
+												</div>
+
+												<div >
+													<a href="http://www.linkedin.com" target="_blank">
+													<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit,Lorem ipsum eiusmod tempor sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+													<h6 class="sm-titl">Martin Smith</h6>
+													<span class="info">Linkedin</span>
+												</a>
+												</div>
+												
+											</div>
+											
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-sm-12 text-center">
+												<div class="client-img ">
+													<img src="img/client/1.jpg" alt="image">
+												</div>
+
+												<div class="text-center">
+													<a href="http://www.linkedin.com" target="_blank">
+													<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit,Lorem ipsum eiusmod tempor sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+													<h6 class="sm-titl">Martin Smith</h6>
+													<span class="info">Linkedin</span>
+												</a>
+												</div>
+												
+											</div>
+											
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									
+
+									
+								</div>
+							</div>
+							<div class="clear-fix"></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ====== End Testimonials ======  -->
+
+		<!-- ====== Blog ======  -->
+		<section id="blog" class="blog section-padding section-gray" data-scroll-index="6">
+			<div class="container">
+				<div class="row">
+					<div class="section-border text-center">
+						<div class="content">
+							
+							<div class="row">
+								<div class="col-xs-12 text-center">
+								<h4 class="main-title text-center mb-80">Blog</h4>
+							</div>
+							</div>
+							
+
+							<div class="col-md-4">
+								<div class="item item_blog">
+									<div class="img-post">
+										<img src="img/blog/1.jpg" alt="image">
+										<span class="date">6<br> Aug</span>
+										<a href="blog.html">
+											<span class="v-middle icon icon-document"></span>
+										</a>
+									</div>
+									<div class="post">
+										<div class="post-cont">
+											<h6 class="sm-titl">Standard Post With Image</h6>
+											<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="item item_blog">
+									<div class="img-post">
+										<img src="img/blog/2.jpg" alt="image">
+										<span class="date">3<br> Feb</span>
+										<a href="blog.html">
+											<span class="v-middle icon icon-document"></span>
+										</a>
+									</div>
+									<div class="post">
+										<div class="post-cont">
+											<h6 class="sm-titl">Standard Post With Image</h6>
+											<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="item item_blog">
+									<div class="img-post">
+										<img src="img/blog/3.jpg" alt="image">
+										<span class="date">9<br> Dec</span>
+										<a href="blog.html">
+											<span class="v-middle icon icon-document"></span>
+										</a>
+									</div>
+									<div class="post">
+										<div class="post-cont">
+											<h6 class="sm-titl">Standard Post With Image</h6>
+											<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+										</div>
+	
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="item item_blog">
+									<div class="img-post">
+										<img src="img/blog/3.jpg" alt="image">
+										<span class="date">9<br> Dec</span>
+										<a href="blog.html">
+											<span class="v-middle icon icon-document"></span>
+										</a>
+									</div>
+									<div class="post">
+										<div class="post-cont">
+											<h6 class="sm-titl">Standard Post With Image</h6>
+											<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+										</div>
+	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="item item_blog">
+									<div class="img-post">
+										<img src="img/blog/3.jpg" alt="image">
+										<span class="date">9<br> Dec</span>
+										<a href="blog.html">
+											<span class="v-middle icon icon-document"></span>
+										</a>
+									</div>
+									<div class="post">
+										<div class="post-cont">
+											<h6 class="sm-titl">Standard Post With Image</h6>
+											<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+										</div>
+	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="item item_blog">
+									<div class="img-post">
+										<img src="img/blog/3.jpg" alt="image">
+										<span class="date">9<br> Dec</span>
+										<a href="blog.html">
+											<span class="v-middle icon icon-document"></span>
+										</a>
+									</div>
+									<div class="post">
+										<div class="post-cont">
+											<h6 class="sm-titl">Standard Post With Image</h6>
+											<p>Lorem ipsum eiusmod tempor dolor sit amet, adipisicing elit, sed do dolore eiusmod tempor ut labore et dolore magna aliqua.</p>
+										</div>
+	
+									</div>
+								</div>
+							</div>
+
+							<div class="clear-fix"></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ====== End Blog ======  -->
+
+		
+
+		<!-- ====== Contact ======  -->
+		<section id="contact" class="contact section-padding" data-scroll-index="7">
+			<div class="container">
+				<div class="row">
+					<div class="section-border">
+						<div class="content">
+                            
+							<div class="row">
+								<div class="col-xs-12 text-center">
+								<h4 class="main-title text-center mb-80">Get In Touch</h4>
+							</div>
+							</div>
+							
+
+							<div class="col-md-7">
+								<form class="form main-height" id="contact-form" method="post" action="http://innovationplans.com/idesign/alex/contact.php">
+			                        <div class="messages"></div>
+
+			                        <div class="controls">
+
+			                            <div class="row">
+			                                <div class="col-md-12">
+			                                    <div class="form-group">
+			                                        <input id="form_name" type="text" name="name" placeholder="Name" required="required" data-error="Firstname is required.">
+			                                        <div class="help-block with-errors"></div>
+			                                    </div>
+			                                </div>
+
+			                                 <div class="col-md-12">
+			                                    <div class="form-group">
+			                                        <input id="form_email" type="email" name="email" placeholder="Email" required="required" data-error="Valid email is required.">
+			                                        <div class="help-block with-errors"></div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                            <div class="row">
+			                                <div class="col-md-12">
+			                                    <div class="form-group">
+			                                        <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required" data-error="Message."></textarea>
+			                                        <div class="help-block with-errors"></div>
+			                                    </div>
+			                                </div>
+			                                <div class="col-sm-5">
+			                                    <input type="submit" value="Send message">
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </form>
+							</div>
+							<div class="col-md-5">
+								<div class="info sub-height">
+									<h5>Contact Info.</h5>
+
+									<div class="item">
+										<span class="icon icon-phone"></span>
+										<h6 class="sm-titl">Phone :<br> <span>+2 ( 100 ) 755 238</span></h6>
+									</div>
+									<div class="item">
+										<span class="icon icon-map-pin"></span>
+										<h6 class="sm-titl">Address :<br> <span>3481 Melrose Place, Los Angeles</span></h6>
+									</div>
+									<div class="item">
+										<span class="icon icon-envelope"></span>
+										<h6 class="sm-titl">Email :<br> <span>Support@yosh.com</span></h6>
+									</div>
+									<!-- social Icon -->
+									<div class="social-icon">
+										
+										<a href="#0">
+											<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+										</a>
+										<a href="#0">
+											<span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+										</a>
+										
+										<a href="#0">
+											<span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="clear-fix"></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ====== End Contact ======  -->
+
+		<!-- ====== Footer ======  -->
+		<footer class="section-gray">
+			<p>&copy; All Rights Reserved.</p>
+		</footer>
+		<!-- ====== End Footer ======  -->
+       
+
+
+
+
+
+       
+        <!-- jQuery -->
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+	  	<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- scrollIt -->
+		<script src="js/scrollIt.min.js"></script>
+
+		<!-- magnific-popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+
+		<!-- owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+
+		<!-- stellar js -->
+		<script src="js/jquery.stellar.min.js"></script>
+
+		<!-- typed js -->
+      	<script src="js/typed.js"></script>
+
+      	<!-- jquery.waypoints.min js -->
+	  	<script src="js/jquery.waypoints.min.js"></script>
+
+	  	<!-- jquery.counterup.min js -->
+	  	<script src="js/jquery.counterup.min.js"></script>
+
+      	<!-- isotope.pkgd.min js -->
+      	<script src="js/isotope.pkgd.min.js"></script>
+
+      	<!-- validator js -->
+      	<script src="js/validator.js"></script>
+      	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+      	<!-- custom script -->
+        <script src="js/custom.js"></script>
+        <script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  }
+    		    
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+    </body>
+
+</html>

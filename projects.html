@@ -1,0 +1,451 @@
+<!doctype html>
+ <html class="no-js" lang=""> 
+    
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dangal</title>
+       	<meta name="description" content="Dangal is a responsive creative template">
+		<meta name="keywords" content="portfolio, personal, corporate, business, parallax, creative, agency">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700,800,900|Playfair+Display:400,400i,700,700i,900|Open+Sans:300,400,600,700|Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+
+        <!-- bootstrap css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+
+
+		<!-- owl carousel CSS -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+		<!-- magnific-popup CSS -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+
+		<!-- Font Icon Core CSS -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/et-line.css">
+
+		<!-- Core Style Css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/theme-color-main.css">
+         <style type="text/css">
+        	.content .item1 {
+              
+              box-shadow: 0 0 5px 0 #ccc;
+        	}
+        	 .item2 {
+              
+              box-shadow: 0 0 5px 0 #ccc;
+              padding: 10px !important;
+              border-top: 2px solid #0686cb;
+        	}
+            .item_blog {
+            	box-shadow: 0 0 5px 0 #ccc;
+            	padding: 5px;
+            }
+        	.content .portfolio img {
+        		height: 200px;
+        		width: 100%;
+        		object-fit: cover;
+        		overflow: hidden;
+        	}
+        	.content .portfolio .sm-titl1 {
+        		padding-top: 20px;
+        	}
+
+        	.sm-titl1 {
+        		padding-top: 10px;
+        	}
+        	.img_res img {
+        		height: 100px;
+        		object-fit: cover;
+        		overflow: hidden;
+        	}
+        	@media(min-width: 768px){
+        		.navbar-nav {
+        		float: none;
+        		margin: 0 auto;
+        		display: block;
+        		text-align: center;
+        	}
+        	.navbar-nav > li {
+        		display: inline-block;
+        		float: none;
+        	}
+        	}
+
+        	#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		background: #0686cb;
+		color:#fff;
+	}
+ 
+
+ 
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width:31%;
+	margin:1%;
+	display:none;
+	float:left;
+	overflow:hidden;
+	box-shadow: 0 0 5px 0 #ccc;
+}
+
+	.portfolio-wrapper {
+		overflow:hidden;
+		position: relative !important;
+		background: #666;
+		cursor:pointer;
+	}
+
+	.portfolio img {
+		max-width:100%;
+		position: relative;
+		top:0;
+    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);		
+	}
+	
+	.portfolio .label {
+		position: absolute;
+		width: 100%;
+		height:40px;
+		bottom:-40px;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+
+		.portfolio .label-bg {
+			background: #0686cb;
+			width: 100%;
+			height:100%;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+	
+		.portfolio .label-text {
+			color:#fff;
+			position: relative;
+			z-index:500;
+			padding:5px 8px;
+		}
+			
+			.portfolio .text-category {
+				display:block;
+				font-size:9px;
+			}
+	
+	.portfolio:hover .label {
+    bottom:0;
+  }
+	.portfolio:hover img {
+    top:-30px;
+  }  
+  .carousel {
+  	height: 450px;
+  }
+  .carousel-control {
+  	background-image: none !important;
+  }
+
+	
+
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	
+	
+	#portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+	}		
+
+	#ads {
+		display:none;
+	}
+	
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+	#ads {
+		display:none;
+	}
+	
+}
+        </style>
+        <!--[if lt IE 9]-->
+		<script src="js/html5shiv.min.js"></script>
+		<!--[endif]-->
+    </head>
+    <body>
+
+    	<!-- ====== Preloader ======  -->
+	    <div class="loading">
+			<div class="load-circle"><span class="one"></span></div>
+		</div>
+		<!-- ======End Preloader ======  -->
+       
+       <!-- ====== Navgition ======  -->
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-icon-collapse" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+
+		      
+
+		    </div>
+
+		    <!-- Collect the nav links, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="nav-icon-collapse">
+		      
+			  <!-- links -->
+		      <ul class="nav navbar-nav">
+		        <li><a href="index.html#home" >Home</a></li>
+		        <li><a href="index.html#about" >About Me</a></li>
+		        <li><a href="index.html#work" >Work Experience</a></li>
+		        <li><a href="index.html#skills" >Skills</a></li>
+		        <li><a href="index.html#projects" class="active">Projects</a></li>
+		        <li><a href="index.html#test" >Testimonials</a></li>
+		        <li><a href="index.html#blog" >Blog</a></li>
+		        <li><a href="index.html#contact" >Contact</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container -->
+		</nav>
+		<!-- ====== End Navgition ======  -->
+
+		<!--====== Header ======-->
+		<section class="sub-header">
+			<div class="container">
+				<div class="v-middle">
+
+					<!-- Caption -->
+					<div class="caption text-center">
+						<h1 class="mb-15">Our Projects</h1>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--====== End Header ======-->
+
+
+		<!--====== mp-blog ======-->
+		<section class="mp-blog section-padding">
+			<div class="container">
+				<div class="row">
+
+					<!-- posts -->
+					<div class="col-md-8">
+						<div class="posts">
+
+							<!-- item -->
+							<div class="item">
+
+								<div class="content">
+									<div class="post-img">
+										<div id="myCarousel" class="carousel slide" data-ride="carousel">
+										 <!-- Indicators -->
+										  <ol class="carousel-indicators">
+										    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										    <li data-target="#myCarousel" data-slide-to="1"></li>
+										    <li data-target="#myCarousel" data-slide-to="2"></li>
+										    <li data-target="#myCarousel" data-slide-to="3"></li>
+										  </ol>
+
+										  <!-- Wrapper for slides -->
+										  <div class="carousel-inner">
+										    <div class="item active">
+										      <img src="img/blog/1.jpg" alt="Yosh">
+										    </div>
+
+										    <div class="item">
+										      <img src="img/blog/1.jpg" alt="Yosh">
+										    </div>
+
+										    <div class="item">
+										      <img src="img/blog/1.jpg" alt="Yosh">
+										    </div>
+										    <div class="item">
+										      <img src="img/blog/1.jpg" alt="Yosh">
+										    </div>
+										  </div>
+
+										 
+										</div>
+									</div>
+
+
+
+									<div class="post-info">
+										<a href="#0">
+											<h5>Project Name</h5>
+										</a>
+										<div class="mor-inf">
+											<ul>
+												
+
+												<li><span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span><a href="#0">6 August 2017</a></li>
+
+												<li><span class="icon"><i class="fa fa-tags" aria-hidden="true"></i></span><a href="#0">Web Design</a> - <a href="#0">Art</a> - <a href="#0">Life Style</a></li>
+											</ul>
+										</div>
+										<p class="mb-10">Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+										<p class="mb-10">Lid est minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+										<p class="spacial">doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+										<p>Lid est laborum dolo rumes fugats untras. Etharums rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+										
+
+										
+
+									</div>
+								</div>
+							</div>
+
+							
+
+						</div>
+					</div>
+
+					<!-- side bar -->
+					<div class="col-md-4">
+						<div class="side-bar">
+							
+
+							<div class="widget">
+								<div class="about-bar">
+									<div class="side-tit">
+										<h6 class="ctit">About Us</h6>
+									</div>
+									<img src="img/blog/hero.jpg" alt="image">
+									<p>Fusce vitae nulla at lorem pretium semper. Curab itur laoreet, lectus ac dignissim vestibul lorem pretium semper lectus ac dignissim.</p>
+								</div>
+							</div>
+
+							<div class="widget">
+								<div class="follow">
+									<div class="side-tit">
+										<h6 class="ctit">To Follow Us</h6>
+									</div>
+									<div class="social">
+										
+										<a href="#0">
+											<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+										</a>
+										
+										<a href="#0">
+											<span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+										</a>
+										<a href="#0">
+											<span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+										</a>
+										
+									</div>
+								</div>
+							</div>
+
+							
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--====== End mp-blog ======-->
+
+
+		<!-- ====== Footer ======  -->
+		<footer class="section-gray">
+			<p>&copy; All Rights Reserved.</p>
+		</footer>
+		<!-- ====== End Footer ======  -->
+
+
+
+
+       
+        <!-- jQuery -->
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+	  	<!-- bootstrap -->
+		<script src="js/bootstrap.min.js" ></script>
+
+		<!-- scrollIt -->
+		<script src="js/scrollIt.min.js"></script>
+
+		<!-- magnific-popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+
+		<!-- owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+
+		<!-- stellar js -->
+		<script src="js/jquery.stellar.min.js"></script>
+
+		<!-- typed js -->
+      	<script src="js/typed.js"></script>
+
+      	<!-- jquery.waypoints.min js -->
+	  	<script src="js/jquery.waypoints.min.js"></script>
+
+	  	<!-- jquery.counterup.min js -->
+	  	<script src="js/jquery.counterup.min.js"></script>
+
+      	<!-- isotope.pkgd.min js -->
+      	<script src="js/isotope.pkgd.min.js"></script>
+
+      	<!-- validator js -->
+      	<script src="js/validator.js"></script>
+
+      	<!-- custom script -->
+        <script src="js/custom.js"></script>
+
+    </body>
+
+</html>
